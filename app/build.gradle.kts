@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.lchristmann.demoworkneverhavinginternetinbg"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.lchristmann.demoworkneverhavinginternetinbg"
@@ -66,4 +66,11 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    // WorkManager Kotlin + coroutines
+    implementation(libs.androidx.work.runtime.ktx)
+
+    // Retrofit with Gson Converter for JSON
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
 }
